@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfólio de Lucas Egilio</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .bg-dark {
+            background-color: #1a1a1a !important;
+        }
+
+        .link-light {
+            color: #e0e0e0 !important;
+        }
+
+        .link-light:hover {
+            color: #007bff !important;
+        }
+
+        .navbar {
+            background-color: #333;
+        }
+
+        .navbar-brand, .navbar-nav .nav-link {
+            color: #e0e0e0 !important;
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #007bff !important;
+        }
+
+        .navbar-toggler-icon {
+            background-color: #007bff;
+        }
+  
+        .project-card {
+            background-color: #2c2c2c;
+            border-radius: 12px;
+            padding: 20px;
+            margin: 20px 0;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .project-card h5 {
+            color: #007bff;
+            font-size: 1.5rem;
+            margin-top: 15px;
+        }
+
+        .project-card p {
+            font-size: 1.1rem;
+            color: #e0e0e0;
+        }
+
+        .project-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 30px;
+        }
+
+        .project-container .project-card {
+            width: 100%;
+            max-width: 350px;
+        }
+
+
+        @media (max-width: 768px) {
+            .project-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        .project-card a h5{
+            text-decoration: none;
+            list-style: none;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+        
+      
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Portfólio de Lucas Egilio</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#trabalhos">Trabalhos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div id="trabalhos" class="container mt-5">
+            <h2 class="text-center text-primary mb-4">Meus Projetos</h2>
+            
+            <div class="project-container">
+    
+                <div class="project-card">
+                    <img src="1p.png" alt="E-Commerce" width="100px" >
+                    <a href="./ShoopingCart - cópia/indexx.html"><h5>E-Commerce</h5></a>
+                    <p>Simulação de um site de compras online de camisas de futebol.</p>
+                </div>
+
+
+                <div class="project-card">
+                    <img src="5p.png" alt="Pizza App" width="100px">
+                    <a href="./Euro2024 trabalho - cópia/index.html"><h5>EuroCopa</h5></a>
+                    <p>Tabela usando CSS e HTML simulando a fase de grupos da UEFA EuroCopa.</p>
+                </div>
+
+                <div class="project-card">
+                    <img src="3p.png" alt="Calculadora Google" width="100px">
+                    <h5>Calculadora Google</h5>
+                    <p>Calculadora feita em HTML, CSS e JavaScript simulando uma calculadora Google.</p>
+                </div>
+
+                <div class="project-card">
+                    <img src="4p.png" alt="Lampada" width="100px">
+                    <h5>Lâmpada</h5>
+                    <p>Projeto usando HTML, CSS e JavaScript para simular um botão que acende e apaga uma lâmpada. </p>
+                </div>
+
+
+                <div class="project-card">
+                    <img src="2p.png" alt="Projeto 5" width="100px"> 
+                    <h5>Pizza App</h5>
+                    <p>Simulador de um aplicativo de Pizza, onde a cada vez que aperta no botão, um pedaço da pizza é comido.</p>
+                </div>
+            </div>
+        </div>
+
+        <footer id="contato" class="bg-dark py-5 mt-5">
+            <h3 class="text-center text-primary">Entre em Contato</h3>
+            <div class="contact-info text-center">
+                <p><i class="bi bi-envelope"></i> Email: <a href="mailto:lucas.egilio@gmail.com" class="text-light">lucas.egilio@gmail.com</a></p>
+                <p><i class="bi bi-phone"></i> Telefone: <a href="tel:+5514998579140" class="text-light">(55) 14 99857-9140</a></p>
+                <p><i class="bi bi-geo-alt"></i> Localização: São Paulo, SP, Brasil</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="bootstrap.bundle.js"></script>
+</body>
+</html>

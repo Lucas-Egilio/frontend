@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perfil Profissional de Lucas Egilio</title>
+    <link rel="stylesheet" href="bootstrap.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+    
+        .bg-dark {
+            background-color: #1a1a1a !important;
+        }
+
+        .link-light {
+            color: #e0e0e0 !important;
+        }
+
+        .link-light:hover {
+            color: #007bff !important;
+        }
+
+        .navbar {
+            background-color: #333;
+        }
+
+        .navbar-brand, .navbar-nav .nav-link {
+            color: #e0e0e0 !important;
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link:hover {
+            color: #007bff !important;
+        }
+
+        .navbar-toggler-icon {
+            background-color: #007bff;
+        }
+
+
+        .profile-card {
+            background-color: #2c2c2c;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            margin-bottom: 30px;
+        }
+
+        .profile-card img {
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .profile-card h2 {
+            margin-top: 20px;
+            font-size: 2rem;
+            color: #007bff;
+        }
+
+        .profile-card p {
+            font-size: 1.2rem;
+            color: #e0e0e0;
+        }
+
+      
+        .section-box {
+            background-color: #2c2c2c;
+            border-radius: 12px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .section-box h4 {
+            color: #007bff;
+            font-size: 1.8rem;
+            margin-bottom: 15px;
+        }
+
+        .section-box ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .section-box ul li {
+            font-size: 1.2rem;
+            color: #e0e0e0;
+            margin-bottom: 10px;
+        }
+
+        footer {
+            background-color: #121212;
+            padding: 40px;
+            text-align: center;
+            color: #e0e0e0;
+        }
+
+        footer h3 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        footer .contact-info p {
+            font-size: 1.2rem;
+            margin-bottom: 15px;
+        }
+
+        footer .contact-info i {
+            font-size: 1.5rem;
+            margin-right: 10px;
+        }
+
+        footer a {
+            color: #007bff;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #0056b3;
+        }
+
+        /* Responsividade */
+        @media (max-width: 768px) {
+            .container-fluid {
+                padding-left: 15px;
+                padding-right: 15px;
+            }
+
+            .profile-card {
+                padding: 20px;
+            }
+
+            .profile-card img {
+                width: 150px;
+                height: 150px;
+            }
+
+            .section-box {
+                padding: 20px;
+            }
+
+            footer h3 {
+                font-size: 1.5rem;
+            }
+
+            footer .contact-info p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Profile Page</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#habilidades">Início</a>
+                        </li>
+                            <a class="nav-link" href="#trabalhos">Trabalhos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+        <div class="row justify-content-center mt-5">
+            <div class="col-lg-4 col-md-6">
+                <div class="profile-card text-center">
+                    <img src="D36AEAA6-C1B5-49B9-A02C-BEC06B526CE7.jpeg" alt="Lucas Egilio">
+                    <h2>Lucas Egilio</h2>
+                    <p><h3>Desenvolvedor Full-Stack</h3></p>
+                    <p>Programador e Palmeirense.</p>
+                    <a href="mailto:lucas.egilio@gmail.com" class="btn-contact">Entrar em Contato</a>
+                </div>
+            </div>
+        </div>
+<br>
+<br>
+<br>
+
+        <div class="row">
+            <div class="col-12" id="sobre">
+                <div class="section-box">
+                    <h4>Sobre mim</h4>
+                    <p>Sou um desenvolvedor Full-Stack que gosta de criar sites de diversos temas. Tenho uma forte base de conhecimento adquirido pelo SENAI pelo grande professor Fábio Esposto. Busco cada vez mais inovar meu conhecimento e aplicar o que sei onde precisar.</p>
+                </div>
+            </div>
+
+            <div class="col-12" id="habilidades">
+                <div class="section-box">
+                    <h4>Habilidades</h4>
+                    <br>
+                    <ul>
+                        <li><i class="bootstrap"></i><img src="bootstrap.png" width="25px"> Bootstrap</li>
+                        <br>
+                        <li><i class="javascript"></i> <img src="js.png" width="25px"> JavaScript</li>
+                        <br>
+                        <li><i class="java"></i> <img src="java.png" width="25px"> Java</li>
+                        <br>
+                        <li><i class="react"></i><img src="biblioteca.png" width="25px"> React</li>
+                        <br>
+                        <li><i class="css"></i><img src="css-3.png" width="25px"> CSS</li>
+                        <br>
+                        <li><i class="typescript"></i><img src="icons8-texto-datilografado-48.png" width="25px"> TypeScript</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-12" id="formacao">
+                <div class="section-box">
+                    <h4>Formação</h4>
+                    <p>- Colégio La Salle</p>
+                    <p>- Escola Senai "Luiz Massa"</p>
+                </div>
+            </div>
+
+            <div class="col-12" id="trabalhos">
+                <div class="section-box">
+                    <h4>Trabalhos</h4>
+                    <p> Para acessar página de Portfólio <a href="portfolio.html">Clique Aqui.</a></p>
+                </div>
+            </div>
+        </div>
+
+        <footer id="contato">
+            <h3>Entre em Contato</h3>
+            <div class="contact-info">
+                <p><i class="bi bi-envelope"></i> Email: <a href="mailto:lucas.egilio@gmail.com">lucas.egilio@gmail.com</a></p>
+                <p><i class="bi bi-phone"></i> Telefone: <a href="tel:+5514998579140">(55) 14 99857-9140</a></p>
+                <p><i class="bi bi-geo-alt"></i> Localização: São Paulo, SP, Brasil</p>
+            </div>
+        </footer>
+    </div>
+
+    <script src="bootstrap.bundle.js"></script>
+</body>
+
+</html>
