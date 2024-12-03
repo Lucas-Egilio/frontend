@@ -1,0 +1,228 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #2d2d2d; 
+    color: #fff; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.container h1 {
+    color: #f0f0f0;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 50px;
+    margin-bottom: 20px;
+}
+
+header .shopping i {
+    font-size: 2em;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.25s ease;
+}
+
+header .shopping i:hover {
+    color: #ff6347; 
+}
+
+header .shopping {
+    position: relative;
+    text-align: right;
+}
+
+header .shopping span {
+    position: absolute;
+    top: -5px;
+    left: 80%;
+    background-color: red;
+    padding: 3px 10px;
+    border-radius: 50%;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9em;
+    font-weight: bold;
+}
+
+.card {
+    position: fixed;
+    top: 0;
+    left: 100%;
+    width: 500px;
+    height: 100vh;
+    background-color: #333;
+    border-left: 1px solid #444;
+    transition: 0.5s;
+    z-index: 10;
+}
+
+.card h1 {
+    color: #f5f5f5;
+    margin: 0;
+    padding: 0 20px;
+    height: 80px;
+    display: flex;
+    align-items: center;
+}
+
+.card .checkout {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.card .checkout div {
+    background-color: #ff6347;
+    color: #fff;
+    width: 100%;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.container .list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 50px;
+}
+
+.listCard li {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    color: #fff;
+    row-gap: 10px;
+    align-items: center;
+    margin-bottom: 15px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #444;
+}
+
+.listCard img {
+    height: 80px;
+    width: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.active .card {
+    left: calc(100% - 500px);
+}
+
+.active .container {
+    transform: translateX(-200px);
+}
+
+.item img {
+    height: 180px;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.item {
+    background-color: #444;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.item:hover {
+    transform: scale(1.05); 
+}
+
+.item .title {
+    margin: 10px 0;
+    font-size: 1.2em;
+    color: #fff;
+}
+
+.item .price {
+    margin-bottom: 10px;
+    color: #ff6347;
+    font-weight: bold;
+}
+
+.item button {
+    background-color: #ff6347;
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.item button:hover {
+    background-color: #e5533c; 
+}
+
+
+.listCard .count {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+.cardButton {
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    border-radius: 5px;
+    font-size: 1.2em;
+}
+
+.cardButton:hover {
+    background-color: #e5533c;
+}
+
+.count {
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+/*brasil e santos autografada*/
+.item.santosAA, .item.brasilAA {
+    border: 2px solid gold;
+    box-shadow: 0 0 15px rgba(255, 215, 0, 0.6);
+    transform: scale(1.05);
+}
+
+.item.santosAA:hover, .item.brasilAA:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px rgba(255, 215, 0, 0.8);
+}
